@@ -91,6 +91,15 @@ header{position:sticky;top:0;z-index:50;background:rgba(20,26,43,.96);backdrop-f
 .svc-tile.dim{opacity:.32}
 @media (max-width:1000px){.svc-list{grid-template-columns:1fr 1fr}}
 @media (max-width:560px){.svc-list{grid-template-columns:1fr}}
+.product-card{margin-top:14px;display:flex;align-items:center;gap:24px;background:var(--navy);color:var(--cream);border-radius:var(--radius);padding:20px 24px;text-decoration:none;border:1px solid var(--navy);transition:transform .15s,border-color .15s}
+.product-card:hover{border-color:var(--amber);transform:translateY(-2px)}
+.product-card img{width:150px;height:auto;border-radius:10px;flex:none}
+.product-txt{display:flex;flex-direction:column;gap:4px;flex:1;min-width:0}
+.product-txt .n{font:600 12px/1 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--amber)}
+.product-txt b{font:600 20px/1.25 var(--head)}
+.product-txt span:last-child{font-size:15px;color:#c9cdd8}
+.product-card .more{font-size:14px;font-weight:600;color:var(--amber);white-space:nowrap}
+@media (max-width:760px){.product-card{flex-direction:column;align-items:flex-start;gap:14px}}
 
 /* Service detail */
 .svc{padding:88px 0;border-top:1px solid var(--line)}

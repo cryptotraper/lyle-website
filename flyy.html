@@ -1,0 +1,594 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Flyy app wireframes — Save together. Fly together. | Flock Consulting</title>
+<meta name="description" content="Low-fidelity web app wireframes for Flyy, a Flock Consulting product in development that turns the pardner, susu or tanda your family already trusts into an app.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 80'%3E%3Crect width='100' height='80' rx='14' fill='%23141a2b'/%3E%3Cg fill='none' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg stroke='%23e8a855'%3E%3Cpath d='M44 14l6 5 6-5M32 27l6 5 6-5M56 27l6 5 6-5M20 40l6 5 6-5M68 40l6 5 6-5'/%3E%3C/g%3E%3Cpath stroke='%235bb5a8' d='M44 56l6 5 6-5'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="flyy.css">
+<style>html{scroll-padding-top:122px}</style>
+</head>
+<body class="lf">
+<a class="skip" href="#main">Skip to content</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="flock" viewBox="0 0 100 70">
+    <g fill="none" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+      <path stroke="#e8a855" d="M42 6l8 6 8-6M28 20l8 6 8-6M56 20l8 6 8-6M14 34l8 6 8-6M70 34l8 6 8-6"/>
+      <path stroke="#5bb5a8" d="M42 52l8 6 8-6"/>
+    </g>
+  </symbol>
+</svg>
+
+<header>
+  <nav class="wrap nav" aria-label="Main">
+    <a class="brand" href="index.html"><svg width="34" height="24"><use href="#flock"/></svg>Flock Consulting</a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="menu" aria-label="Open menu">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+    </button>
+    <ul id="menu">
+      <li><a class="current" href="index.html#services">Services</a></li>
+      <li><a href="leadflock.html">LeadFlock</a></li>
+      <li><a href="index.html#who">Who we serve</a></li>
+      <li><a href="index.html#about">About Lyle</a></li>
+      <li><a href="index.html#start">Pricing</a></li>
+      <li><a class="btn btn-amber" href="#contact">Book a free fit call</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+<!-- HERO -->
+<section class="hero dark" id="top">
+  <div class="wrap">
+    <div class="crumb"><a href="index.html">Flock Consulting</a> / <a href="index.html#services">Services</a> / Flyy</div>
+    <div class="presents">Flock Consulting presents</div>
+    <h1><img class="flyy-logo" src="flyy-logo.png" width="640" height="256" alt="Flyy"></h1>
+    <p class="sub">Save together. Fly together.</p>
+    <span class="wip">In development · wireframes</span>
+    <p class="lead">Flyy turns the pardner, susu or tanda your family has always trusted into an app. Friends and community groups save on a schedule and take turns collecting the pot. Nobody has to hold the cash: members e-transfer each other directly, and Flyy never holds or moves anyone's money.</p>
+    <div class="ctas">
+      <a class="btn btn-amber" href="#onboarding">See the wireframes →</a>
+      <a class="btn btn-ghost" href="#contact">Run a pilot flock</a>
+    </div>
+  </div>
+</section>
+
+<nav class="subnav" aria-label="On this page">
+  <ul>
+    <li><a href="#how">How it works</a></li>
+    <li><a href="#onboarding">Onboarding</a></li>
+    <li><a href="#start-flock">Start a flock</a></li>
+    <li><a href="#round">Each round</a></li>
+    <li><a href="#record">On track &amp; on record</a></li>
+    <li><a href="#contact">Get involved</a></li>
+  </ul>
+</nav>
+
+<!-- HOW IT WORKS -->
+<section id="how">
+  <div class="wrap">
+    <div class="eyebrow">How Flyy works</div>
+    <h2>Start a flock. Everyone pays in. Everyone gets a turn to fly.</h2>
+    <div class="steps4">
+      <div class="step4 reveal"><div class="n">01</div><h3>Start a flock</h3><p>Invite your people and set the amount and the schedule.</p></div>
+      <div class="step4 reveal"><div class="n">02</div><h3>Everyone pays in</h3><p>Members e-transfer each other as they always have. Flyy tracks who has paid.</p></div>
+      <div class="step4 reveal"><div class="n">03</div><h3>Take your turn</h3><p>Each round, one member collects the whole pot, sent directly by the others.</p></div>
+      <div class="step4 reveal"><div class="n">04</div><h3>Keep the record</h3><p>A history of every contribution, ready to show a lender.</p></div>
+    </div>
+    <p class="source">These are low-fidelity wireframes: they show layout, content and flow, not the final visual design. Names and amounts are sample placeholders.</p>
+  </div>
+</section>
+
+<!-- 1 ONBOARDING -->
+<section id="onboarding" class="alt">
+  <div class="wrap">
+    <div class="flow-intro"><div class="eyebrow">Flow 1 · Onboarding</div><h2>From invite link to verified member.</h2><p>Most people arrive from a lead bird's invite. They sign up with their phone, verify their ID, and land in the flock that invited them.</p></div>
+
+    <figure class="shot">
+      <div class="wf" role="img" aria-label="Wireframe: welcome and sign-up page">
+        <div class="wf-bar"><i></i><i></i><i></i><span class="wf-url">getflyy.ca/join/SUNDAY-7KQ</span></div>
+        <div class="solo">
+          <div class="cols">
+            <div style="display:flex;flex-direction:column;gap:14px">
+              <img src="flyy-logo.png" width="140" height="56" alt="" style="width:140px;height:auto;border-radius:8px">
+              <div class="big">Save together.<br>Fly together.</div>
+              <div class="row"><span class="m">1</span><span class="s">How it works</span></div>
+              <div class="box soft"><span>1 · Start a flock</span><span>2 · Everyone pays in</span><span>3 · Take your turn to fly</span><span>4 · Keep the record</span></div>
+              <div class="row box" style="flex-direction:row"><span class="m">2</span><span class="s grow">Flyy never holds or moves your money.</span></div>
+            </div>
+            <div class="box strong">
+              <div class="row"><span class="m">4</span><span class="s grow">Marcia invited you to <b>Sunday Pardner</b></span></div>
+              <h5>Create your account</h5>
+              <label class="fld">Full name (as on your ID)<span class="in">First and last name</span></label>
+              <label class="fld"><span class="row">Mobile number <span class="m">3</span></span><span class="in">+1 (___) ___-____</span></label>
+              <span class="b2">Send code</span>
+              <label class="fld">6-digit code<span class="in">_ _ _ _ _ _</span></label>
+              <span class="ck s">I agree to the Terms and Privacy Policy</span>
+              <span class="b1">Continue</span>
+              <span class="s">Already have an account? Log in</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption>
+        <span class="stag">Screen 1</span><h3>Welcome and sign up</h3>
+        <ol>
+          <li><span class="m">1</span><span><b>The four steps</b> explain the idea in one glance, for people new to the app.</span></li>
+          <li><span class="m">2</span><span><b>Trust line up front:</b> Flyy never holds or moves money.</span></li>
+          <li><span class="m">3</span><span><b>Mobile number is the login,</b> so payment reminders can go out by text.</span></li>
+          <li><span class="m">4</span><span><b>Invite context:</b> the link carries the flock, so new members land in it after sign-up.</span></li>
+        </ol>
+      </figcaption>
+    </figure>
+
+    <figure class="shot">
+      <div class="wf" role="img" aria-label="Wireframe: identity verification page">
+        <div class="wf-bar"><i></i><i></i><i></i><span class="wf-url">app.getflyy.ca/verify</span></div>
+        <div class="solo" style="display:flex;justify-content:center">
+          <div style="width:100%;max-width:620px;display:flex;flex-direction:column;gap:16px">
+            <img src="flyy-logo.png" width="100" height="40" alt="" style="width:100px;height:auto;border-radius:6px">
+            <div class="wsteps"><i class="on"></i><i class="on"></i><i></i></div>
+            <div class="big">Every bird is verified</div>
+            <p class="s" style="margin:0;font-size:14px">Your flock trusts you with real money. A quick ID check shows them you're you.</p>
+            <div class="row"><span class="lbl grow">Two quick steps</span><span class="m">1</span></div>
+            <div class="cols">
+              <div class="box"><div class="ph" style="height:110px">Photo of your ID</div><h5>Government ID</h5><span class="s">Driver's licence, passport or PR card</span></div>
+              <div class="box"><div class="ph" style="height:110px">Selfie camera</div><h5>Quick selfie</h5><span class="s">To match you to your ID</span></div>
+            </div>
+            <div class="box soft"><div class="row"><h5 class="grow">Status</h5><span class="chip">Not started</span><span class="m">2</span></div><span class="s">Usually takes about 2 minutes. Your flock sees a Verified badge, never your ID.</span></div>
+            <div class="row"><span class="b1">Start verification</span><span class="s">Why do we ask?</span></div>
+          </div>
+        </div>
+      </div>
+      <figcaption>
+        <span class="stag">Screen 2</span><h3>Verify your identity</h3>
+        <ol>
+          <li><span class="m">1</span><span><b>ID photo plus a selfie,</b> handled by an ID-verification provider. Every member is verified (the A in Flyy's FACE trust model: Authenticity).</span></li>
+          <li><span class="m">2</span><span><b>Members see a badge,</b> not the document itself.</span></li>
+        </ol>
+      </figcaption>
+    </figure>
+
+    <figure class="shot">
+      <div class="wf" role="img" aria-label="Wireframe: join or start a flock page">
+        <div class="wf-bar"><i></i><i></i><i></i><span class="wf-url">app.getflyy.ca/welcome</span></div>
+        <div class="app">
+          <div class="side"><img src="flyy-logo.png" width="96" height="38" alt=""><span class="on">Home</span><span>My flocks</span><span>Record</span><span class="sp"></span><span>Settings</span></div>
+          <div class="main">
+            <div class="top"><h4>Welcome, Ama</h4><span class="chip on">Verified</span><span class="av">AO</span></div>
+            <div class="row"><span class="lbl grow">Waiting for you</span><span class="m">1</span></div>
+            <div class="box strong"><div class="row"><span class="av">MB</span><div class="grow"><h5>Sunday Pardner</h5><span class="s">Marcia invited you · $200 monthly · 8 birds · you fly in Round 5</span></div><span class="b1">Accept invite</span><span class="b2">Decline</span></div></div>
+            <div class="cols">
+              <div class="box"><div class="row"><div class="ph" style="width:44px;height:44px">+</div><h5 class="grow">Start a flock</h5><span class="m">2</span></div><span class="s">You'll be the lead bird: set the amount, schedule and order.</span><span class="b2" style="align-self:flex-start">Start a flock</span></div>
+              <div class="box"><div class="row"><div class="ph" style="width:44px;height:44px">#</div><h5 class="grow">Join with a code</h5><span class="m">3</span></div><span class="s">Got a code from your lead bird?</span><div class="row"><span class="in grow">Invite code</span><span class="b2">Join</span></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption>
+        <span class="stag">Screen 3</span><h3>Join or start</h3>
+        <ol>
+          <li><span class="m">1</span><span><b>A pending invite comes first,</b> so people who arrived from a link can accept in one click.</span></li>
+          <li><span class="m">2</span><span><b>Start a flock</b> makes this person the lead bird, the organizer.</span></li>
+          <li><span class="m">3</span><span><b>Join with a code</b> for invites shared by word of mouth.</span></li>
+        </ol>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 2 START A FLOCK -->
+<section id="start-flock">
+  <div class="wrap">
+    <div class="flow-intro"><div class="eyebrow">Flow 2 · Start a flock</div><h2>A lead bird sets up the circle in three steps.</h2><p>On a wide screen the setup is a wizard with a live summary beside it, so the lead bird always sees the pot, the schedule and who's in.</p></div>
+
+    <figure class="shot">
+      <div class="wf" role="img" aria-label="Wireframe: create a flock, step 1 basics">
+        <div class="wf-bar"><i></i><i></i><i></i><span class="wf-url">app.getflyy.ca/flocks/new</span></div>
+        <div class="app">
+          <div class="side"><img src="flyy-logo.png" width="96" height="38" alt=""><span>Home</span><span class="on">My flocks</span><span>Record</span><span class="sp"></span><span>Settings</span></div>
+          <div class="main">
+            <div class="top"><h4>Start a flock</h4><span class="s">Step 1 of 3 · Basics</span></div>
+            <div class="wsteps"><i class="on"></i><i></i><i></i></div>
+            <div class="cols wide">
+              <div style="display:flex;flex-direction:column;gap:12px">
+                <label class="fld">Flock name<span class="in">Family Susu</span></label>
+                <label class="fld"><span class="row">Each member pays <span class="m">1</span></span><span class="in">$ 200</span></label>
+                <div class="fld">How often<div class="seg"><span>Weekly</span><span>Every 2 weeks</span><span class="on">Monthly</span></div></div>
+                <div class="cols"><div class="fld">Members (incl. you)<span class="in">–&nbsp;&nbsp;&nbsp;8&nbsp;&nbsp;&nbsp;+</span></div><label class="fld">First due date<span class="in">Jun 1, 2027</span></label></div>
+                <div class="row"><span class="b2">Cancel</span><span class="b1">Next: rotation order</span></div>
+              </div>
+              <div class="box soft">
+                <div class="row"><h5 class="grow">Each turn's pot</h5><span class="m">2</span></div>
+                <div class="big">$1,600</div>
+                <span class="s">$200 × 8 members · 8 rounds · Jun 2027 – Jan 2028</span>
+                <div class="ph" style="height:90px">Calendar strip: one dot per round</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption>
+        <span class="stag">Screen 4</span><h3>Flock basics</h3>
+        <ol>
+          <li><span class="m">1</span><span><b>Amount and frequency,</b> plus the number of members, which sets the number of rounds.</span></li>
+          <li><span class="m">2</span><span><b>Live summary:</b> what each person collects on their turn and how long the flock runs.</span></li>
+        </ol>
+      </figcaption>
+    </figure>
+
+    <figure class="shot">
+      <div class="wf" role="img" aria-label="Wireframe: rotation order and invites, steps 2 and 3">
+        <div class="wf-bar"><i></i><i></i><i></i><span class="wf-url">app.getflyy.ca/flocks/new/rotation</span></div>
+        <div class="app">
+          <div class="side"><img src="flyy-logo.png" width="96" height="38" alt=""><span>Home</span><span class="on">My flocks</span><span>Record</span><span class="sp"></span><span>Settings</span></div>
+          <div class="main">
+            <div class="top"><h4>Who flies when?</h4><span class="s">Steps 2–3 of 3 · Rotation and invites</span></div>
+            <div class="wsteps"><i class="on"></i><i class="on"></i><i class="on"></i></div>
+            <div class="cols">
+              <div class="box">
+                <div class="row"><div class="seg grow"><span>Random draw</span><span class="on">I'll set it</span><span>Members pick</span></div><span class="m">1</span></div>
+                <div class="tbl">
+                  <div class="tr h"><span>Member</span><span>Round</span><span>Order</span></div>
+                  <div class="tr"><span><span class="av">AO</span>Ama (you)</span><span>1 · Jun 1</span><span>⋮⋮</span></div>
+                  <div class="tr"><span><span class="av">MB</span>Marcia</span><span>2 · Jul 1</span><span>⋮⋮</span></div>
+                  <div class="tr"><span><span class="av">KJ</span>Kemar</span><span>3 · Aug 1</span><span>⋮⋮</span></div>
+                  <div class="tr"><span class="s">Open slot</span><span>4 · Sep 1</span><span>⋮⋮</span></div>
+                  <div class="tr"><span class="s">4 more open slots</span><span>5–8</span><span></span></div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="row"><h5 class="grow">Invite your flock</h5><span class="m">2</span></div>
+                <span class="in">getflyy.ca/j/FAMILY-3MX</span>
+                <div class="row"><span class="b2">Copy link</span><span class="b2">Share…</span><span class="b2">Add contacts</span></div>
+                <div class="row"><span class="lbl grow">3 of 8 joined</span><span class="m">3</span></div>
+                <div class="tbl">
+                  <div class="tr"><span><span class="av">AO</span>Ama (you)</span><span></span><span class="chip on">Verified</span></div>
+                  <div class="tr"><span><span class="av">MB</span>Marcia</span><span></span><span class="chip on">Verified</span></div>
+                  <div class="tr"><span><span class="av">KJ</span>Kemar</span><span></span><span class="chip">Verifying</span></div>
+                  <div class="tr"><span><span class="av">DT</span>Desmond</span><span></span><span class="chip">Invited</span></div>
+                </div>
+              </div>
+            </div>
+            <div class="row"><span class="b2">Back</span><span class="b1">Review flock</span></div>
+          </div>
+        </div>
+      </div>
+      <figcaption>
+        <span class="stag">Screens 5 and 6</span><h3>Rotation order and invites</h3>
+        <ol>
+          <li><span class="m">1</span><span><b>Choose how the order is set,</b> then drag rows to reorder. Each slot shows its round and date. The order locks at launch.</span></li>
+          <li><span class="m">2</span><span><b>One link</b> to drop into WhatsApp, text or a church group chat.</span></li>
+          <li><span class="m">3</span><span><b>Live status per member:</b> invited, joined, verified.</span></li>
+        </ol>
+      </figcaption>
+    </figure>
+
+    <figure class="shot">
+      <div class="wf" role="img" aria-label="Wireframe: review and launch the flock">
+        <div class="wf-bar"><i></i><i></i><i></i><span class="wf-url">app.getflyy.ca/flocks/new/review</span></div>
+        <div class="app">
+          <div class="side"><img src="flyy-logo.png" width="96" height="38" alt=""><span>Home</span><span class="on">My flocks</span><span>Record</span><span class="sp"></span><span>Settings</span></div>
+          <div class="main">
+            <div class="top"><h4>Family Susu</h4><span class="s">Review and launch</span><span class="m">1</span></div>
+            <div class="cols c3">
+              <div class="box"><span class="s">Each member pays</span><h5>$200 monthly</h5></div>
+              <div class="box"><span class="s">Pot per turn</span><h5>$1,600</h5></div>
+              <div class="box"><span class="s">Runs</span><h5>Jun 2027 – Jan 2028</h5></div>
+            </div>
+            <div class="cols">
+              <div class="box"><h5>Rotation · 8 turns</h5><div class="strip"><span><span class="av">AO</span>Jun</span><span><span class="av">MB</span>Jul</span><span><span class="av">KJ</span>Aug</span><span><span class="av">DT</span>Sep</span><span><span class="av">…</span>Oct+</span></div></div>
+              <div class="box"><div class="row"><h5 class="grow">Flock rules</h5><span class="m">2</span></div><span class="ck">Pay by the 1st of each month</span><span class="ck">3-day grace period, then the lead bird is alerted</span><span class="ck">The recipient confirms every payment</span></div>
+            </div>
+            <div class="row box soft" style="flex-direction:row"><span class="m">3</span><span class="s grow">Waiting on 5 members to join and verify before you can launch.</span><span class="b1 off">Launch flock</span></div>
+          </div>
+        </div>
+      </div>
+      <figcaption>
+        <span class="stag">Screen 7</span><h3>Review and launch</h3>
+        <ol>
+          <li><span class="m">1</span><span><b>One summary everyone sees</b> before any money moves.</span></li>
+          <li><span class="m">2</span><span><b>Flock rules:</b> due date, grace period and how payments are confirmed. Each member accepts them when they join.</span></li>
+          <li><span class="m">3</span><span><b>Launch stays disabled</b> until every member has joined, verified and accepted.</span></li>
+        </ol>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 3 EACH ROUND -->
+<section id="round" class="alt">
+  <div class="wrap">
+    <div class="flow-intro"><div class="eyebrow">Flow 3 · Each round</div><h2>Pay in, collect, confirm.</h2><p>The core loop every member repeats. The dashboard always leads with the next thing to do, and the flock page shows everyone who's paid.</p></div>
+
+    <figure class="shot">
+      <div class="wf" role="img" aria-label="Wireframe: home dashboard">
+        <div class="wf-bar"><i></i><i></i><i></i><span class="wf-url">app.getflyy.ca/home</span></div>
+        <div class="app">
+          <div class="side"><img src="flyy-logo.png" width="96" height="38" alt=""><span class="on">Home</span><span>My flocks</span><span>Record</span><span class="sp"></span><span>Settings</span></div>
+          <div class="main">
+            <div class="top"><h4>Good morning, Ama</h4><div class="ph" style="width:32px;height:32px;border-radius:50%;padding:0">Bell</div><span class="av">AO</span></div>
+            <div class="cols c3">
+              <div class="box strong"><div class="row"><span class="lbl grow">Up next</span><span class="m">1</span></div><h5>Pay Kemar $200</h5><span class="s">Sunday Pardner · Round 3 · due Aug 1 (in 3 days)</span><span class="b1">Pay in</span></div>
+              <div class="box soft"><div class="row"><span class="lbl grow">Your turn</span><span class="m">2</span></div><h5>You fly in Round 5</h5><span class="s">You'll collect $1,600 on Oct 1</span><span class="b2">See rotation</span></div>
+              <div class="box"><span class="lbl">Saved so far</span><div class="big">$600</div><span class="s">3 payments · 100% on time</span></div>
+            </div>
+            <div class="row"><span class="lbl grow">My flocks</span><span class="m">3</span><span class="b2">+ Start a flock</span></div>
+            <div class="tbl">
+              <div class="tr h"><span>Flock</span><span>This round</span><span>Status</span></div>
+              <div class="tr"><span>Sunday Pardner · Round 3 of 8</span><span><span class="meter" style="display:block"><i style="width:75%"></i></span></span><span class="chip">6 of 8 paid</span></div>
+              <div class="tr"><span>Family Susu · starts Jun 2027</span><span><span class="meter" style="display:block"><i style="width:37%"></i></span></span><span class="chip">3 of 8 joined</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption>
+        <span class="stag">Screen 8</span><h3>Home dashboard</h3>
+        <ol>
+          <li><span class="m">1</span><span><b>The next action comes first:</b> who to pay, how much and when.</span></li>
+          <li><span class="m">2</span><span><b>Your turn</b> is always visible, so the payoff stays in view.</span></li>
+          <li><span class="m">3</span><span><b>Every flock at a glance:</b> round, progress and status.</span></li>
+        </ol>
+      </figcaption>
+    </figure>
+
+    <figure class="shot">
+      <div class="wf" role="img" aria-label="Wireframe: flock round page with who has paid and group chat">
+        <div class="wf-bar"><i></i><i></i><i></i><span class="wf-url">app.getflyy.ca/flocks/sunday-pardner</span></div>
+        <div class="app">
+          <div class="side"><img src="flyy-logo.png" width="96" height="38" alt=""><span>Home</span><span class="on">My flocks</span><span>Record</span><span class="sp"></span><span>Settings</span></div>
+          <div class="main">
+            <div class="top"><h4>Sunday Pardner</h4><span class="s">Lead bird: Marcia</span><span class="b1">Pay my $200</span></div>
+            <div class="cols wide">
+              <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
+                <div class="box"><div class="row"><span class="lbl grow">Round 3 of 8 · due Aug 1</span><span class="m">1</span></div><div class="row"><span class="av">KJ</span><div class="grow"><h5>Kemar is flying</h5><span class="s">$1,200 of $1,600 confirmed</span></div></div><div class="meter"><i style="width:75%"></i></div></div>
+                <div class="row"><span class="lbl grow">Who's paid</span><span class="m">2</span></div>
+                <div class="tbl">
+                  <div class="tr"><span><span class="av">AO</span>Ama (you)</span><span class="s">Due Aug 1</span><span class="chip">Due in 3 days</span></div>
+                  <div class="tr"><span><span class="av">MB</span>Marcia</span><span class="s">Jul 30</span><span class="chip on">Confirmed</span></div>
+                  <div class="tr"><span><span class="av">GF</span>Grace</span><span class="s">Jul 31</span><span class="chip">Sent · awaiting Kemar</span></div>
+                  <div class="tr"><span><span class="av">DT</span>Desmond</span><span class="s">Aug 1</span><span class="chip late">Late 2 days</span></div>
+                  <div class="tr"><span class="s">+4 more confirmed</span><span></span><span></span></div>
+                </div>
+                <div class="row"><span class="lbl grow">Rotation</span><span class="m">3</span></div>
+                <div class="strip"><span><span class="av">MB</span>Jun ✓</span><span><span class="av">RS</span>Jul ✓</span><span class="now"><span class="av">KJ</span><b>Aug</b></span><span><span class="av">DT</span>Sep</span><span><span class="av">AO</span>Oct</span><span><span class="av">…</span>Nov+</span></div>
+              </div>
+              <div class="box" style="min-height:360px">
+                <div class="row"><h5 class="grow">Flock chat</h5><span class="m">4</span></div>
+                <span class="sys">Round 3 started · Kemar is flying</span>
+                <span class="bub">Morning all! Reminder, it's Kemar's month.</span>
+                <span class="sys">Marcia sent $200 · Kemar confirmed</span>
+                <span class="bub me">Sending mine Friday</span>
+                <span class="sys">Reminder sent to Desmond</span>
+                <div class="compose"><span class="in">Message the flock</span><span class="b1">Send</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption>
+        <span class="stag">Screen 9</span><h3>The flock, this round</h3>
+        <ol>
+          <li><span class="m">1</span><span><b>Pot progress</b> for the current round and who is collecting it.</span></li>
+          <li><span class="m">2</span><span><b>One shared view of who's paid:</b> confirmed, sent and awaiting confirmation, due, or late. The lead bird can open a late member's row.</span></li>
+          <li><span class="m">3</span><span><b>Rotation strip</b> shows who has flown and who flies next.</span></li>
+          <li><span class="m">4</span><span><b>Chat sits beside the round</b> on wide screens. Payment events post into it automatically.</span></li>
+        </ol>
+      </figcaption>
+    </figure>
+
+    <figure class="shot">
+      <div class="wf" role="img" aria-label="Wireframe: pay in dialog over the flock page">
+        <div class="wf-bar"><i></i><i></i><i></i><span class="wf-url">app.getflyy.ca/flocks/sunday-pardner/pay</span></div>
+        <div class="app overlay">
+          <div class="side"><img src="flyy-logo.png" width="96" height="38" alt=""><span>Home</span><span class="on">My flocks</span><span>Record</span><span class="sp"></span><span>Settings</span></div>
+          <div class="main ghost"><div class="top"><h4>Sunday Pardner</h4></div><div class="ph" style="height:120px">Round progress</div><div class="ph" style="height:200px">Who's paid</div></div>
+          <div class="dim">
+            <div class="dlg">
+              <div class="row"><span class="av">KJ</span><div class="grow"><span class="s">Pay in · Round 3 · send to Kemar</span><div class="big">$200.00</div></div><span class="s">✕</span></div>
+              <span class="s box soft">Flyy doesn't move money. You send it from your own bank, as you always have.</span>
+              <div class="row"><h5 class="grow">1 · Send an Interac e-Transfer</h5><span class="m">1</span></div>
+              <div class="cp"><span>Email</span><b>kemar@…</b><em>Copy</em></div>
+              <div class="cp"><span>Amount</span><b>$200.00</b><em>Copy</em></div>
+              <div class="cp"><span>Message</span><b>FLYY-SP-R3 <span class="m">2</span></b><em>Copy</em></div>
+              <span class="b2">Open online banking</span>
+              <div class="row"><h5 class="grow">2 · Let your flock know</h5><span class="m">3</span></div>
+              <span class="ck s">Attach a screenshot (optional)</span>
+              <span class="b1">I've sent it</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption>
+        <span class="stag">Screen 10</span><h3>Pay in</h3>
+        <ol>
+          <li><span class="m">1</span><span><b>A dialog over the flock page</b> hands off to the member's own bank, with copy buttons for each e-Transfer field.</span></li>
+          <li><span class="m">2</span><span><b>A reference code</b> in the e-Transfer message helps the recipient match payments.</span></li>
+          <li><span class="m">3</span><span><b>"I've sent it"</b> marks the payment as sent. The recipient still confirms it.</span></li>
+        </ol>
+      </figcaption>
+    </figure>
+
+    <figure class="shot">
+      <div class="wf" role="img" aria-label="Wireframe: your turn to fly, confirm incoming payments">
+        <div class="wf-bar"><i></i><i></i><i></i><span class="wf-url">app.getflyy.ca/flocks/sunday-pardner/my-turn</span></div>
+        <div class="app">
+          <div class="side"><img src="flyy-logo.png" width="96" height="38" alt=""><span>Home</span><span class="on">My flocks</span><span>Record</span><span class="sp"></span><span>Settings</span></div>
+          <div class="main">
+            <div class="cols wide">
+              <div style="display:flex;flex-direction:column;gap:6px"><span class="s">Sunday Pardner · Round 5 · due Oct 1</span><div class="big">It's your turn to fly</div><span class="s">You're collecting $1,600 from 7 birds, plus your own $200.</span></div>
+              <div class="ph" style="height:90px">Celebration illustration</div>
+            </div>
+            <div class="box"><div class="row"><span class="grow s">$800 of $1,400 confirmed</span></div><div class="meter"><i style="width:57%"></i></div></div>
+            <div class="row"><span class="lbl grow">Confirm what's landed</span><span class="m">1</span></div>
+            <div class="tbl">
+              <div class="tr"><span><span class="av">GF</span>Grace · sent Sep 29</span><span class="s">Ref FLYY-SP-R5</span><span class="row"><span class="b1">Received</span><span class="b2">Not received</span><span class="m">2</span></span></div>
+              <div class="tr"><span><span class="av">RS</span>Rohan · sent Sep 30</span><span class="s">Ref FLYY-SP-R5</span><span class="row"><span class="b1">Received</span><span class="b2">Not received</span></span></div>
+              <div class="tr"><span><span class="av">MB</span>Marcia, Kemar +2</span><span></span><span class="chip on">Confirmed</span></div>
+              <div class="tr"><span><span class="av">DT</span>Desmond</span><span></span><span class="chip">Not sent yet</span></div>
+            </div>
+            <div class="row"><span class="m">3</span><span class="s">The round closes after the last confirmation. Round 6 starts Nov 1.</span></div>
+          </div>
+        </div>
+      </div>
+      <figcaption>
+        <span class="stag">Screen 11</span><h3>Your turn to fly</h3>
+        <ol>
+          <li><span class="m">1</span><span><b>The recipient confirms each payment</b> once it lands. Confirmed payments are what go on everyone's record.</span></li>
+          <li><span class="m">2</span><span><b>"Not received"</b> starts a gentle check-in with that member, not a public accusation.</span></li>
+          <li><span class="m">3</span><span><b>The round closes</b> after the last confirmation, and the next member's turn begins.</span></li>
+        </ol>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- 4 ON TRACK AND ON RECORD -->
+<section id="record">
+  <div class="wrap">
+    <div class="flow-intro"><div class="eyebrow">Flow 4 · On track and on record</div><h2>The app chases payments, and the record follows you.</h2><p>Lead birds stop chasing payments by hand, and every member builds the documentation lenders ask for and savings circles have never produced.</p></div>
+
+    <figure class="shot">
+      <div class="wf" role="img" aria-label="Wireframe: late payment drawer for the lead bird">
+        <div class="wf-bar"><i></i><i></i><i></i><span class="wf-url">app.getflyy.ca/flocks/sunday-pardner/members/desmond</span></div>
+        <div class="app overlay">
+          <div class="side"><img src="flyy-logo.png" width="96" height="38" alt=""><span>Home</span><span class="on">My flocks</span><span>Record</span><span class="sp"></span><span>Settings</span></div>
+          <div class="main ghost"><div class="top"><h4>Sunday Pardner</h4></div><div class="ph" style="height:120px">Round progress</div><div class="ph" style="height:220px">Who's paid</div></div>
+          <div class="dim right">
+            <div class="drawer">
+              <div class="row"><span class="lbl grow">Lead bird view</span><span class="s">✕</span></div>
+              <div class="row"><span class="av">DT</span><div class="grow"><h5>Desmond is late</h5><span class="s">$200 to Kemar · was due Aug 1</span></div><span class="chip late">2 days</span></div>
+              <span class="s">Grace period ends Aug 4. Desmond flies in Round 4.</span>
+              <div class="row"><span class="lbl grow">Reminders already sent</span><span class="m">1</span></div>
+              <div class="wtl"><span>Jul 29 · 3 days before · text + push</span><span>Aug 1 · due today · text + push</span><span><b>Aug 2 · friendly overdue note</b></span><span class="s">Aug 4 · grace period ends</span></div>
+              <div class="row"><span class="lbl grow">What do you want to do?</span><span class="m">2</span></div>
+              <span class="b1">Send a personal nudge</span>
+              <div class="row"><span class="b2 grow">Call Desmond</span><span class="b2 grow">Record cash paid</span></div>
+              <span class="s" style="text-decoration:underline">Move Desmond's turn later</span>
+              <span class="s" style="text-decoration:underline">Pause or remove from flock</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption>
+        <span class="stag">Screen 12</span><h3>Late payment (lead bird)</h3>
+        <ol>
+          <li><span class="m">1</span><span><b>Automatic reminders</b> before, on and after the due date, so nobody has to chase payments (the F in FACE: Facilitation).</span></li>
+          <li><span class="m">2</span><span><b>Escalating options</b> in a side drawer: a personal nudge, a call, recording a cash payment, then moving or pausing the member.</span></li>
+        </ol>
+      </figcaption>
+    </figure>
+
+    <figure class="shot">
+      <div class="wf" role="img" aria-label="Wireframe: savings record with a share-with-a-lender panel">
+        <div class="wf-bar"><i></i><i></i><i></i><span class="wf-url">app.getflyy.ca/record</span></div>
+        <div class="app">
+          <div class="side"><img src="flyy-logo.png" width="96" height="38" alt=""><span>Home</span><span>My flocks</span><span class="on">Record</span><span class="sp"></span><span>Settings</span></div>
+          <div class="main">
+            <div class="top"><h4>My savings record</h4><span class="s">Since Jun 2026 · all flocks</span></div>
+            <div class="cols wide">
+              <div style="display:flex;flex-direction:column;gap:12px;min-width:0">
+                <div class="row"><span class="lbl grow">Summary</span><span class="m">1</span></div>
+                <div class="cols c3"><div class="box"><div class="big">$600</div><span class="s">Contributed</span></div><div class="box"><div class="big">3</div><span class="s">Payments</span></div><div class="box"><div class="big">100%</div><span class="s">On time</span></div></div>
+                <div class="ph" style="height:80px">Chart: contributions by month</div>
+                <div class="row"><span class="lbl grow">Every contribution</span><span class="m">2</span></div>
+                <div class="tbl">
+                  <div class="tr"><span>$200 to Kemar · Round 3</span><span class="s">Jul 31</span><span class="chip">Sent</span></div>
+                  <div class="tr"><span>$200 to Rohan · Round 2</span><span class="s">Jul 1</span><span class="chip on">Confirmed</span></div>
+                  <div class="tr"><span>$200 to Marcia · Round 1</span><span class="s">Jun 1</span><span class="chip on">Confirmed</span></div>
+                </div>
+              </div>
+              <div class="box">
+                <div class="row"><h5 class="grow">Share with a lender</h5><span class="m">3</span></div>
+                <label class="fld">Date range<span class="in">Jun 2026 – Nov 2026</span></label>
+                <div class="row"><span class="grow">Sunday Pardner</span><i class="sw"></i></div>
+                <div class="row"><span class="grow">Family Susu</span><i class="sw off"></i></div>
+                <div class="doc"><img src="flyy-logo.png" width="56" height="22" alt="" style="width:56px;height:auto;border-radius:4px"><b style="font-size:13px">Contribution statement</b><span class="s">Ama O. · ID verified · 3 payments · $600</span><div class="ln" style="width:90%"></div><div class="ln" style="width:75%"></div><div class="ln" style="width:60%"></div></div>
+                <span class="b1">Download PDF</span>
+                <span class="b2">Send a secure link</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <figcaption>
+        <span class="stag">Screen 13</span><h3>Savings record and lender statement</h3>
+        <ol>
+          <li><span class="m">1</span><span><b>Totals and on-time rate</b> across every flock.</span></li>
+          <li><span class="m">2</span><span><b>Every contribution</b> with its date, recipient and confirmation status (the E in FACE: a transparent Environment).</span></li>
+          <li><span class="m">3</span><span><b>A statement for lenders,</b> built from recipient-confirmed payments plus verified identity, as a PDF or an expiring link.</span></li>
+        </ol>
+      </figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact dark" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <div class="eyebrow">Flyy by Flock</div>
+      <h2>Help us hatch<br><span>the first flocks.</span></h2>
+      <p class="lead">We're looking for pilot lead birds who already run a pardner, susu or tanda, a technical co-founder, and advisers in fintech and privacy.</p>
+      <div class="lines">
+        <div>Email: <a href="mailto:lyle@flockconsulting.ca">lyle@flockconsulting.ca</a></div>
+        <div>LinkedIn: <a href="https://www.linkedin.com/in/lyle-notice-373ba261" target="_blank" rel="noopener">Lyle Notice</a></div>
+      </div>
+    </div>
+    <form id="fitform">
+      <label>Your name<input name="name" required autocomplete="name"></label>
+      <label>Email<input name="email" type="email" required autocomplete="email"></label>
+      <label>I'd like to
+        <select name="role">
+          <option>Run a pilot flock as a lead bird</option>
+          <option>Join as technical co-founder</option>
+          <option>Advise on fintech or privacy</option>
+          <option>Just learn more</option>
+        </select>
+      </label>
+      <label>Tell us about your circle or your background<textarea name="msg"></textarea></label>
+      <button class="btn btn-amber" type="submit">Send to Lyle →</button>
+      <small>Opens your email app with your message ready to send to Lyle.</small>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© <span id="yr">2026</span> Flock Consulting · Lyle Notice, PhD · Founder &amp; Principal</span>
+    <span><a href="index.html#services">Services</a> · <a href="leadflock.html">LeadFlock</a> · <a href="flyy.html">Flyy</a> · <a href="index.html#about">About</a> · <a href="mailto:lyle@flockconsulting.ca">Contact</a></span>
+  </div>
+</footer>
+
+<script>
+document.getElementById('yr').textContent = new Date().getFullYear();
+const btn = document.querySelector('.menu-btn'), menu = document.getElementById('menu');
+btn.addEventListener('click', () => { const o = menu.classList.toggle('open'); btn.setAttribute('aria-expanded', o); });
+menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => { menu.classList.remove('open'); btn.setAttribute('aria-expanded', false); }));
+
+document.getElementById('fitform').addEventListener('submit', e => {
+  e.preventDefault();
+  const d = new FormData(e.target);
+  const body = `Name: ${d.get('name')}\nEmail: ${d.get('email')}\nInterest: ${d.get('role')}\n\n${d.get('msg')}`;
+  location.href = 'mailto:lyle@flockconsulting.ca?subject=' + encodeURIComponent('Flyy — ' + d.get('role')) + '&body=' + encodeURIComponent(body);
+});
+
+// Highlight the current section in the on-page menu
+const sub = [...document.querySelectorAll('.subnav a')];
+const so = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) sub.forEach(l => l.classList.toggle('active', l.getAttribute('href') === '#' + e.target.id));
+}), {rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section[id]').forEach(s => so.observe(s));
+
+const ro = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); ro.unobserve(e.target); } }), {threshold:.12});
+document.querySelectorAll('.reveal').forEach(el => ro.observe(el));
+</script>
+</body>
+</html>

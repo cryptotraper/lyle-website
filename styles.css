@@ -152,6 +152,19 @@ header{position:sticky;top:0;z-index:50;background:rgba(20,26,43,.96);backdrop-f
 .stepc h3{font-size:19px;margin-bottom:6px}
 .stepc p{margin:0;color:var(--muted);font-size:15.5px}
 @media (max-width:860px){.steps{grid-template-columns:1fr}}
+.offers{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:44px 0 28px}
+.offer{display:flex;flex-direction:column;align-items:flex-start;padding:30px;border-radius:var(--radius);background:var(--white);border:1px solid var(--line)}
+.offer.featured{border:2px solid var(--navy)}
+.offer .who{font:600 13px/1.3 var(--head);letter-spacing:.14em;text-transform:uppercase;color:var(--amber-ink);margin-bottom:12px}
+.offer h3{font-size:21px;margin-bottom:10px}
+.offer p{margin:0;color:var(--muted);font-size:15.5px}
+.offer .amt{font:700 28px/1.1 var(--head);margin:22px 0 10px}
+.offer small{color:var(--muted);font-size:14px}
+.offer .btn{margin-top:auto}
+.offer .text-link{margin-top:auto;padding-top:20px}
+.offer .amt + .btn{margin-top:14px}
+.offers-note{margin:0;color:var(--muted);font-size:15px}
+@media (max-width:760px){.offers{grid-template-columns:1fr}.offer{padding:24px}.offer .text-link{white-space:normal}}
 table{width:100%;border-collapse:collapse;background:var(--white);border-radius:var(--radius);overflow:hidden;border:1px solid var(--line)}
 th,td{text-align:left;padding:18px 22px;border-bottom:1px solid var(--line);font-size:16px}
 th{font:600 13px/1 var(--head);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);background:#faf9f6}

@@ -309,10 +309,21 @@
       </label>
       <label>What are you working on?<textarea name="msg"></textarea></label>
       <button class="btn btn-amber" type="submit">Request my fit call →</button>
-      <small>Opens your email app with your message ready to send to Lyle.</small>
+      <small id="form-hint">Opens your email app with your message ready to send to Lyle.</small>
     </form>
   </div>
 </section>
+
+<!-- Booking popup: Google Calendar appointment schedule (adds a Google Meet link to every booking) -->
+<dialog id="booking" aria-labelledby="booking-title">
+  <div class="booking-head">
+    <h3 id="booking-title">Pick a time for your fit call</h3>
+    <button type="button" class="booking-close" aria-label="Close">×</button>
+  </div>
+  <p class="booking-sub">Free, 15 minutes, on Google Meet. You'll get a calendar invite with the Meet link.</p>
+  <iframe title="Book a fit call with Lyle" loading="lazy"></iframe>
+  <p class="booking-alt">Can't find a time that works? <a href="#" id="booking-email">Email Lyle your note instead</a>.</p>
+</dialog>
 </main>
 
 <footer>
@@ -348,12 +359,31 @@ document.querySelectorAll('[data-service]').forEach(a => a.addEventListener('cli
   document.querySelector('#fitform select').value = a.dataset.service;
 }));
 
-// Form -> mailto
-document.getElementById('fitform').addEventListener('submit', e => {
-  e.preventDefault();
-  const d = new FormData(e.target);
+// Form -> Google Calendar booking popup (falls back to email)
+// Paste Lyle's Google Calendar appointment schedule link here
+// (Google Calendar > Create > Appointment schedule > Share > Website embed > Inline, copy the src URL).
+// Leave it empty to keep the old email-only behaviour.
+const BOOKING_URL = 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3hPZYflNzHmGRm6fu0APxo2zHHiOwTg_SKc-uJ5WLmwb1PZjKP48TDQl44vmsUko3BOy-0HVXU?gv=true';
+
+const fitform = document.getElementById('fitform');
+const mailtoFromForm = () => {
+  const d = new FormData(fitform);
   const body = `Name: ${d.get('name')}\nEmail: ${d.get('email')}\nOrganization: ${d.get('org')}\nInterested in: ${d.get('service')}\n\n${d.get('msg')}`;
-  location.href = 'mailto:lyle@flockconsulting.ca?subject=' + encodeURIComponent('Fit call request — ' + d.get('service')) + '&body=' + encodeURIComponent(body);
+  return 'mailto:lyle@flockconsulting.ca?subject=' + encodeURIComponent('Fit call request — ' + d.get('service')) + '&body=' + encodeURIComponent(body);
+};
+const booking = document.getElementById('booking');
+if (BOOKING_URL) document.getElementById('form-hint').textContent = 'Opens Lyle\'s calendar so you can pick a time. Calls happen on Google Meet.';
+fitform.addEventListener('submit', e => {
+  e.preventDefault();
+  if (!BOOKING_URL || typeof booking.showModal !== 'function') { location.href = mailtoFromForm(); return; }
+  const frame = booking.querySelector('iframe');
+  if (!frame.src) frame.src = BOOKING_URL;
+  booking.showModal();
+});
+booking.querySelector('.booking-close').addEventListener('click', () => booking.close());
+booking.addEventListener('click', e => { if (e.target === booking) booking.close(); });
+document.getElementById('booking-email').addEventListener('click', e => {
+  e.preventDefault(); booking.close(); location.href = mailtoFromForm();
 });
 
 // Active nav link

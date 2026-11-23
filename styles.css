@@ -198,6 +198,19 @@ form .btn{justify-content:center;border:0;cursor:pointer;font-size:16px;padding:
 form small{color:#8f95a6;font-size:13px}
 @media (max-width:860px){.contact-grid{grid-template-columns:1fr}}
 
+/* Booking popup */
+#booking{width:min(920px,calc(100vw - 32px));max-height:calc(100vh - 32px);padding:24px;border:0;border-radius:20px;background:var(--cream);color:var(--ink);box-shadow:0 24px 80px rgba(0,0,0,.35)}
+#booking[open]{display:flex;flex-direction:column}
+#booking::backdrop{background:rgba(20,26,43,.7)}
+.booking-head{display:flex;justify-content:space-between;align-items:center;gap:16px}
+.booking-head h3{font-size:22px}
+.booking-close{background:none;border:0;font-size:30px;line-height:1;color:var(--muted);cursor:pointer;padding:4px 8px}
+.booking-sub{margin:6px 0 16px;color:var(--muted);font-size:15px}
+#booking iframe{width:100%;height:600px;max-height:calc(100vh - 220px);border:1px solid var(--line);border-radius:var(--radius);background:var(--white)}
+.booking-alt{margin:14px 0 0;font-size:14px;color:var(--muted)}
+.booking-alt a{color:var(--teal-ink);font-weight:600}
+@media (max-width:600px){#booking{padding:16px}.booking-head h3{font-size:19px}}
+
 footer{background:#0e1320;color:#8f95a6;padding:32px 0;font-size:14px}
 footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 footer a{color:#c9cdd8;text-decoration:none}
